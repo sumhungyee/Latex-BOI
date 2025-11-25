@@ -151,27 +151,17 @@ def greet(msg):
 def help(msg):
     content = r"""
     \section{Help}
+    Hello there, I am \LaTeXbOi and I am here to \colorbox{green}{help} you! I am currently (supposed to be) hosted on an AWS EC2 instance, 
+    so I will be slaving for you 24/7 :(
     \subsection{Commands}
     \begin{enumerate}
     \item \texttt{/help}. Obvious
     \item \texttt{/hi}. Say hi!
-    \item \texttt{/text <content>}. Assumes you are typing text!
-    \item \texttt{/latex <equation>}. Assumes you are typing an equation!
+    \item \texttt{/text <content>}. Assumes you are typing text! This probably works best for most cases!
+    \item \texttt{/latex <equation>}. Assumes you are typing a short equation (and you are lazy)!
     \end{enumerate}
     \subsection{This is All Compiled!}
-    By the way, this is compiled too! The code is:
-    \begin{lstlisting}[basicstyle=\tiny]
-    \section{Help}
-    \subsection{Commands}
-    \begin{enumerate}
-    \item \texttt{/help}. Obvious
-    \item \texttt{/hi}. Say hi!
-    \item \texttt{/text <content>}. Assumes you are typing text!
-    \item \texttt{/latex <equation>}. Assumes you are typing an equation!
-    \end{enumerate}
-    \subsection{This is All Compiled!}
-    
-    \end{lstlisting}
+    By the way, this is compiled too!
     \subsection{Currently Installed}
     \begin{enumerate}
     \item amsfonts, amssymb, amsmath, amsthm
