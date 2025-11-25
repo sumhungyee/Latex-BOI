@@ -3,6 +3,12 @@
 
 A minimal Python Telegram Bot for LaTeX compilation. This telebot is currently run on EC2 under the handle @latexboi.
 
+## Functionality
+1. Accomodates multiple users (each message creates a unique job)
+2. Displays compilation error messages
+3. Dynamic (but simple) resizing of canvas
+
+
 ## Instructions
 To install this on a cloud instance, follow these instructions for Debian-based distributions.
 ```
