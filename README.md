@@ -1,5 +1,5 @@
 # Latex-BOI
-A minimal Python Telegram Bot for LaTeX compilation
+A minimal Python Telegram Bot for LaTeX compilation. This telebot is currently run on EC2 under the handle @latexboi.
 
 ## Instructions
 To install this on a cloud instance, follow these instructions for Debian-based distributions.
@@ -7,7 +7,11 @@ To install this on a cloud instance, follow these instructions for Debian-based 
 sudo apt update -y
 sudo apt install git python3 -y
 sudo apt install python3-pip python3-venv -y
+# EITHER
 sudo apt install texlive-base texlive-latex-base texlive-latex-recommended texlive-pictures texlive-latex-extra poppler-utils tmux -y
+# OR
+sudo apt-get install texlive-full
+
 
 git clone https://github.com/sumhungyee/Latex-BOI.git
 python3 -m venv venv
