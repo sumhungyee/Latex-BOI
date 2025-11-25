@@ -12,15 +12,16 @@ sudo apt install texlive-base texlive-latex-base texlive-latex-recommended texli
 # OR
 sudo apt-get install texlive-full poppler-utils tmux -y
 
-
 git clone https://github.com/sumhungyee/Latex-BOI.git
 python3 -m venv venv
 pip install -r requirements.txt
-
-
+```
+## Tmux to run script in background
+```
 tmux new -s session
 source venv/bin/activate
 cd Latex-BOI
 
 ```
-Lastly, either define `.env` with `TELEBOT_TOKEN=<YOUR_TOKEN_HERE>` before running `python script.py`. Also, one may detach from the session with `ctrl` + `B`, then `D`.
+Then, either define `.env` with `TELEBOT_TOKEN=<YOUR_TOKEN_HERE>`.
+Lastly, run `python script.py`. Also, one may detach from the session with `ctrl` + `B`, then `D`.
