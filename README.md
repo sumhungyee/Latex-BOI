@@ -10,7 +10,7 @@ sudo apt install python3-pip python3-venv -y
 # EITHER
 sudo apt install texlive-base texlive-latex-base texlive-latex-recommended texlive-pictures texlive-latex-extra poppler-utils tmux -y
 # OR
-sudo apt-get install texlive-full
+sudo apt-get install texlive-full poppler-utils tmux -y
 
 
 git clone https://github.com/sumhungyee/Latex-BOI.git
