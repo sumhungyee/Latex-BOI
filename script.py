@@ -76,7 +76,7 @@ def send_pic(latex_content, msg, varwidth=7.5, dpi = 1000):
 
     if result.returncode != 0:
         output = "Error compiling LaTeX. Check your code.\n"
-        bot.reply_to(msg, output, parse_mode='Markdown')
+        # bot.reply_to(msg, output, parse_mode='Markdown')
         error_printing = []
         if result.stdout:
             stdout = result.stdout.splitlines()
@@ -90,7 +90,9 @@ def send_pic(latex_content, msg, varwidth=7.5, dpi = 1000):
                     
             error_string = "\n".join(error_printing)
             error_string_split = split_string(error_string)
-            for substr in error_string_split:
+            for i, substr in enumerate(error_string_split):
+                if i == 0:
+                    substr = output + substr
                 bot.reply_to(msg, f"```\n{substr}\n```", parse_mode='Markdown')
         
         clear_files_and_decrement(jobid)
