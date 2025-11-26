@@ -151,7 +151,7 @@ def greet(msg):
 def help(msg):
     content = r"""
     \section{Help}
-    Hello there, I am \LaTeXbOi and I am here to \colorbox{green}{help} you! I am currently (supposed to be) hosted on an AWS EC2 instance, 
+    Hello there, I am \LaTeXbOi and I am here to \colorbox{green}{help} you! I am currently (supposed to be) hosted on a cloud instance, 
     so I will be slaving for you 24/7 :(
     \subsection{Commands}
     \begin{enumerate}
@@ -177,5 +177,6 @@ def help(msg):
     \end{enumerate}
     """ 
     send_pic(content, msg, varwidth=12, dpi = 600)
+
 
 bot.infinity_polling(timeout = 2, long_polling_timeout=5)
