@@ -92,8 +92,10 @@ def send_pic(latex_content, msg, varwidth=7.5, dpi = 1000):
             error_string_split = split_string(error_string)
             for i, substr in enumerate(error_string_split):
                 if i == 0:
-                    substr = output + substr
-                bot.reply_to(msg, f"```\n{substr}\n```", parse_mode='Markdown')
+                    bot.reply_to(msg, f"{output}\n```\n{substr}\n```", parse_mode='Markdown')
+                else:
+                    bot.reply_to(msg, f"```\n{substr}\n```", parse_mode='Markdown')
+                
         
         clear_files_and_decrement(jobid)
         return
