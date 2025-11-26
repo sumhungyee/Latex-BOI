@@ -10,6 +10,10 @@ A minimal Python Telegram Bot for LaTeX compilation. This telebot is currently r
 
 
 ## Instructions
+### Docker Guide
+Define `.env` with `TELEBOT_TOKEN` as an environment variable key with the value being your telegram bot token. Uncomment `RUN cp .env ./` in `Dockerfile` and run with `docker build -t <name> .`
+
+### Minimal Installation Guide
 To install this on a cloud instance, follow these instructions for Debian-based distributions.
 ```
 sudo apt update -y
