@@ -1,7 +1,7 @@
 # Latex-BOI
 <img width="575" height="180" alt="image" src="https://github.com/user-attachments/assets/2119f632-75e1-4beb-88a2-dab71cc0dd24" />
 
-A minimal Python Telegram Bot for LaTeX compilation. This telebot is currently run on EC2 under the handle @latexboiboibotbot.
+A minimal Python Telegram Bot for LaTeX compilation. This telebot is currently run under the handle @latexboiboibotbot.
 
 ## Functionality
 1. Accomodates multiple users (each message creates a unique job)
