@@ -80,9 +80,14 @@ def send_pic(latex_content, msg, varwidth=7.5, dpi = 1000):
         error_printing = []
         if result.stdout:
             stdout = result.stdout.splitlines()
+            continued = False
             for i, line in enumerate(stdout):
-                if line.startswith("!"):
+                if line.startswith("!") or continued:
+                    continued = True
                     error_printing.append(line)
+                    if ". " in line or line.endswith("."):
+                        continued = False
+                    
             error_string = "\n".join(error_printing)
             error_string_split = split_string(error_string)
             for substr in error_string_split:
