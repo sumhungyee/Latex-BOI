@@ -76,7 +76,6 @@ def send_pic(latex_content, msg, varwidth=7.5, dpi = 1000):
 
     if result.returncode != 0:
         output = "Error compiling LaTeX. Check your code.\n"
-        # bot.reply_to(msg, output, parse_mode='Markdown')
         error_printing = []
         if result.stdout:
             stdout = result.stdout.splitlines()
