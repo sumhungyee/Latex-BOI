@@ -22,9 +22,6 @@ primary_region = 'sin'
   cpus = 1
   memory_mb = 512
 
-[deploy]
-  # Number of instances to run
-  count = 1
 
 [processes]
 app = "python script.py"
